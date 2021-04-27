@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 LABEL Anton Prokhorov <vziks@live.ru>
-RUN apk add --no-cache curl tar bash procps
+RUN apk add --no-cache curl tar bash procps openssh
 # Downloading and installing Maven
 # 1- Define a constant with the version of maven you want to install
 ARG MAVEN_VERSION=3.6.3
